@@ -37,4 +37,4 @@ File structure
         ├── related_work.tex
         └── title.tex
 
-The bibliography is in a separated folder because it there is a script to help to keep the file clean and sorted. See `bib/README.txt` for more details.
+The bibliography is in a separated folder because there is a script (`clean_sort_fix_bibliography.sh`) that helps to keep the file clean and sorted. See `bib/README.txt` for more details.
