@@ -1,0 +1,37 @@
+                        %%%%%   HYPERREF  %%%%%
+
+% % If you comment hyperref and then uncomment it, you should delete
+% % egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% % run, let it finish, and you should be clear).
+% \usepackage[breaklinks=true,bookmarks=false]{hyperref}
+
+\usepackage[pagebackref=true]{hyperref}
+
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\definecolor{citecolour}{rgb}{0,0.6,0.2}
+\definecolor{urlcolour} {rgb}{0.8,0,0.8}
+
+\hypersetup{
+%     bookmarks=false,
+    bookmarksopen=false,
+    bookmarksnumbered=true,
+    pdfpagemode=UseOutlines,  % None, UseThumbs, UseOutlines (show bookmarks), FullScreen
+    colorlinks=true,          % color link text, not a box around them.
+    linkcolor=linkcolour,     % color for normal internal links.
+    anchorcolor=black,        % color for anchor text.
+    citecolor=citecolour,     % color for bibligraphical citations in text.
+    filecolor=urlcolour,      % color for URLs which open local files.
+    menucolor=blue,           % color for Acrobat menu items.
+    urlcolor=urlcolour,       % color for linked URLs.
+    breaklinks=true,          % Allows link text to break across.
+    pdfstartview={FitBH},
+    pdfview={FitBH},
+    % pdftitle={\thetitle},
+    % pdfauthor={\theauthor},
+}
+
+% \input{tex/hyperref_colors}
+
+% https://tex.stackexchange.com/questions/54946/how-to-break-long-url-in-an-item#254734
+\def\UrlBreaks{\do.\do\/\do-}

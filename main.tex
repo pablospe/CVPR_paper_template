@@ -1,0 +1,61 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+%
+% packages
+%
+\usepackage{cvpr}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{color}
+
+%
+% definitions
+%
+\newcommand{\todo}[1]{{\textbf{\color{red} #1}}}
+\newcommand{\pmat}[1]{\begin{pmatrix}#1\end{pmatrix}}
+\newcommand{\bmat}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\pspace}{\mathbb{P}}
+\newcommand\customparagraph[1]{\vspace{0.4em}\noindent\textbf{#1}}
+% \newcommand{\etal}{\textit{et al}.}
+% \newcommand{\ie}{\textit{i}.\textit{e}.}
+% \newcommand{\eg}{\textit{e}.\textit{g}.}
+
+%
+% hyperref
+%
+\input{tex/hyperref}
+
+
+%
+% CVPR config
+%
+% \cvprfinalcopy % *** Uncomment this line for the final submission
+\def\cvprPaperID{****} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+%\ifcvprfinal\pagestyle{empty}\fi
+% \setcounter{page}{4321}
+
+
+%
+% document
+%
+\begin{document}
+
+\input{tex/title}
+\input{tex/abstract}
+
+\input{tex/introduction}
+\input{tex/related_work}
+
+\input{tex/method}
+\input{tex/experiments}
+
+\input{tex/conclusion}
+% \input{tex/future_work}
+
+\input{bib//bibliography}
+
+\end{document}
