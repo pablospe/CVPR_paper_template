@@ -1,6 +1,10 @@
 %
 % Keep only fields in the standard BibTeX styles
 %
+
+%
+% article
+%
 keep.field {{author
              title
              journal
@@ -8,6 +12,9 @@ keep.field {{author
              url}
   if $type = article}
 
+%
+% inproceedings
+%
 keep.field {{author
              title
              booktitle
@@ -17,18 +24,24 @@ keep.field {{author
 
 keep.field {{author
              title
-             institution
-             year
-             url}
-  if $type = techreport}
-
-keep.field {{author
-             title
              month
              year
              url}
   if $type = unpublished}
 
+%
+% misc
+%
+keep.field {{author
+             title
+             howpublished
+             url
+             year}
+  if $type = misc}
+
+%
+% book
+%
 keep.field {{author
              editor
              title
@@ -43,8 +56,45 @@ keep.field {{author
              url}
   if $type = book}
 
+%
+% incollection
+%
 keep.field {{author
              title
+             journal
+             year
+             url}
+  if $type = incollection}
+
+%
+% techreport
+%
+keep.field {{author
+  title
+  institution
+  year
+  url}
+if $type = techreport}
+
+
+%
+% PhdThesis
+%
+keep.field {{author
+  title
+  journal
+  year
+  url}
+if $type = phdthesis}
+
+%
+% For all the rest
+%
+keep.field {{author
+             title
+             booktitle
+             journal
+             year
              howpublished
-             year}
-  if $type = misc}
+             url
+}}
